@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Pirata+One&display=swap');
+
+
+::selection {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--grey-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 1.2rem;
+}
+
+:root {
+    --background-color: #fffdfd;
+    --white-color: #fff;
+    --grey-color: #e6e6e6;
+    --primary-color: #b9ff64;
+    --secondary-color: #fa5757;
+    --blue-color: #5368df;
+    --black-color: #000101;
+
+    --box-shadow: .2rem .2rem 4px var(--secondary-color);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+* {
+    /* background-color: var(--background-color); */
+    font-family: 'Pirata One', system-ui;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    padding: 1.6rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    background: var(--white-color);
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .06);
+}
+
+.header .logo h1 {
+    font-family: 'Pirata One', system-ui;
+    font-size: 3rem;
+    color: black;
+}
+
+.header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: grey;
+    user-select: none;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+.header .navbar a:hover {
+    color: var(--secondary-color);
+}
+
+.header .navbar .btn {
+    padding: .6rem 3rem;
+    border-radius: .5rem;
+    color: var(--white-color);
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.header .navbar .btn:hover {
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+}
+
+#menu-btn {
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    .header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 50%;
+
+    }
+
+    #menu-btn {
+        display: initial;
+        line-height: 1;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 1.3rem;
+        border: 1px solid var(--secondary-color);
+        width: 25rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        background-color: white;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+    }
+
+    .header .navbar a {
+        margin: 2.5rem;
+        /* background-color: palegreen; */
+        text-align: center;
+        display: block;
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 42%;
+    }
+
+    .home .content h1{
+        margin-top: 2rem;
+        font-size: 6rem;
+        line-height: .5;
+    }
+
+    .home .content p {
+        font-size: 2.2rem;
+        font-weight: 500;
+        text-align: justify;
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+/* home section start */
+
+.home {
+    display: flex;
+    padding: 10rem 8%;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--background-color);
+    gap: 1rem;
+}
+
+.home .image {
+    flex: 1 1 25rem;
+
+
+}
+
+img {
+    width: 75%;
+    user-select: none;
+    border-radius: 4rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+.home .content {
+    flex: 1 1 55rem;
+
+}
+
+
+h1 {
+    font-family: 'Pirata One', system-ui;
+    font-size: 8rem;
+}
+
+span {
+    font-family: 'Pirata One', system-ui;
+    font-size: 3.34rem;
+    color: var(--blue-color);
+}
+
+p {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.home-btn {
+    padding: .6rem 2rem;
+    background-color: var(--white-color);
+    color: black;
+    display: inline-block;
+    border: 2px solid var(--blue-color);
+    font-weight: 400;
+    user-select: none;
+    margin: 1.7rem 0rem;
+    font-size: 2rem;
+    box-shadow: .2rem .2rem var(--blue-color);
+    border-radius: .5rem;
+}
+
+.home-btn:hover {
+    background-color: var(--blue-color);
+    box-shadow: none;
+    color: var(--white-color);
+}
