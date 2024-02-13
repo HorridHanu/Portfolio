@@ -186,6 +186,7 @@ html {
 
 .case-studies {
     padding: 0rem 8%;
+    margin-top: 2rem;
     /* background-color: lightblue; */
 }
 
@@ -250,6 +251,49 @@ html {
     height: .5rem;
     margin-top: 1rem;
 }
+
+
+
+/* About hanu */
+
+.about{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 14rem;
+    padding: 4rem 8%;
+    justify-content: space-between;
+}
+
+.about img{
+    width: 40%;
+}
+
+.about .about-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+.about .about-text-container h2{
+    font-family: 'Pirata One', system-ui;
+    font-size: 5rem;
+}
+
+.about .about-text-container p{
+    font-size: 2.2rem;
+    text-align: justify;
+    margin-top: 3rem;
+}
+
+.about .about-text-container a{
+    width: 40%;
+    text-align: center;
+}
+
+
+
 
 
 @media (max-width: 991px) {
@@ -344,6 +388,22 @@ html {
         padding: 2rem 0rem;
         width: 18rem;
         height: 18rem;
+    }
+
+    /* About */
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about img{
+        width: 90%;
+        
+    }
+
+    .about .about-text-container a{
+        font-size: 2.2rem;
+        text-align: center;
     }
 
 }
