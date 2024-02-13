@@ -1,3 +1,5 @@
+/* some devices and not working with nested css */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Pirata+One&display=swap');
 
 
@@ -24,6 +26,8 @@
     --secondary-color: #fa5757;
     --blue-color: #5368df;
     --black-color: #000101;
+    --box-color: #cbdaef;
+
 
     --box-shadow: .2rem .2rem 4px var(--secondary-color);
 }
@@ -106,6 +110,148 @@ html {
 }
 
 
+
+
+
+/* home section start */
+
+.home {
+    display: flex;
+    padding: 10rem 8%;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--background-color);
+    gap: 1rem;
+}
+
+.home .image {
+    flex: 1 1 25rem;
+
+
+}
+
+.home .image img {
+    width: 75%;
+    user-select: none;
+    border-radius: 4rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+.home .content {
+    flex: 1 1 55rem;
+
+}
+
+
+.home .content h1 {
+    font-family: 'Pirata One', system-ui;
+    font-size: 8rem;
+}
+
+.home .content span {
+    font-family: 'Pirata One', system-ui;
+    font-size: 3.34rem;
+    color: var(--blue-color);
+    color: var(--box-color);
+}
+
+.home .content p {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.home-btn {
+    padding: .6rem 2rem;
+    background-color: var(--white-color);
+    color: black;
+    display: inline-block;
+    border: 2px solid var(--box-color);
+    font-weight: 400;
+    user-select: none;
+    margin: 1.7rem 0rem;
+    font-size: 2rem;
+    box-shadow: .2rem .2rem var(--box-color);
+    border-radius: .5rem;
+}
+
+.home-btn:hover {
+    background-color: var(--box-color);
+    box-shadow: none;
+    color: rgb(50, 46, 46);
+}
+
+
+/* case studies section start  */
+
+.case-studies {
+    padding: 0rem 8%;
+    /* background-color: lightblue; */
+}
+
+.case-studies h2 {
+    font-family: 'Pirata One', system-ui;
+    font-size: 5rem;
+}
+
+.case-studies p {
+    width: 100%;
+    font-size: 2.2rem;
+}
+
+.case-studies .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem;
+    padding: 1rem 0rem;
+    /* background-color: #b9ff64; */
+    /* justify-content: space-evenly; */
+}
+
+.case-studies .box-container .box {
+    cursor: pointer;
+    width: 23%;
+    overflow: hidden;
+    /* background-color: var(--blue-color); */
+    background-color: var(--box-color);
+    padding: 1.5rem 2.2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.case-studies .box-container .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.3) 0px 4px 6px -2px;
+}
+
+.case-studies .box-container .box h4 {
+    font-size: 2.1rem;
+    text-transform: capitalize;
+}
+
+.case-studies .box-container .box p {
+    font-size: 1.7rem;
+}
+
+
+.case-studies .box-container .box img {
+    padding: 2rem 0rem;
+    user-select: none;
+    width: 20rem;
+    height: 20rem;
+}
+
+.case-studies .box-container .box hr {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    height: .5rem;
+    margin-top: 1rem;
+}
+
+
 @media (max-width: 991px) {
     html {
         font-size: 55%;
@@ -114,6 +260,12 @@ html {
 
     .header {
         padding: 1rem 2rem;
+    }
+
+    .case-studies .box-container .box img {
+        padding: 2rem 0rem;
+        width: 12rem;
+        height: 12rem;
     }
 }
 
@@ -152,6 +304,46 @@ html {
         text-align: center;
         display: block;
         font-size: 2.3rem;
+    }  
+    
+
+
+    .case-studies h2 {
+        font-family: 'Pirata One', system-ui;
+        font-size: 6rem;
+    }
+    
+    .case-studies p {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: justify;
+    }
+
+    .case-studies .box-container .box {
+        width: 65rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        background-color: var(--box-color);
+        padding: 2rem 1.7rem;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .case-studies .box-container .box h4 {
+        font-size: 3.3rem;
+    }
+    
+    .case-studies .box-container .box p {
+        font-size: 2.3rem;
+    }
+    
+    
+    .case-studies .box-container .box img {
+        padding: 2rem 0rem;
+        width: 18rem;
+        height: 18rem;
     }
 
 }
@@ -161,7 +353,7 @@ html {
         font-size: 42%;
     }
 
-    .home .content h1{
+    .home .content h1 {
         margin-top: 2rem;
         font-size: 6rem;
         line-height: .5;
@@ -174,73 +366,8 @@ html {
         margin-top: 2rem;
     }
 
+    .home .content a {
+        font-size: 2.4rem;
+    }
 
-}
-
-
-/* home section start */
-
-.home {
-    display: flex;
-    padding: 10rem 8%;
-    flex-wrap: wrap;
-    align-items: center;
-    background: var(--background-color);
-    gap: 1rem;
-}
-
-.home .image {
-    flex: 1 1 25rem;
-
-
-}
-
-img {
-    width: 75%;
-    user-select: none;
-    border-radius: 4rem;
-    box-shadow: var(--box-shadow);
-}
-
-
-.home .content {
-    flex: 1 1 55rem;
-
-}
-
-
-h1 {
-    font-family: 'Pirata One', system-ui;
-    font-size: 8rem;
-}
-
-span {
-    font-family: 'Pirata One', system-ui;
-    font-size: 3.34rem;
-    color: var(--blue-color);
-}
-
-p {
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-
-.home-btn {
-    padding: .6rem 2rem;
-    background-color: var(--white-color);
-    color: black;
-    display: inline-block;
-    border: 2px solid var(--blue-color);
-    font-weight: 400;
-    user-select: none;
-    margin: 1.7rem 0rem;
-    font-size: 2rem;
-    box-shadow: .2rem .2rem var(--blue-color);
-    border-radius: .5rem;
-}
-
-.home-btn:hover {
-    background-color: var(--blue-color);
-    box-shadow: none;
-    color: var(--white-color);
 }
