@@ -29,7 +29,7 @@ Hanu is a Senior UI/UX Designer and Illustrator in India, with 4+ years of exper
 
 ## Contact
 - Email: horridhanu@gmail.com.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/horridhanu/)
-- Twitter: [Your Twitter Profile](https://twitter.com/horridhanu)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/horridhanu/)
+- Twitter: [Twitter](https://twitter.com/horridhanu)
 
 Feel free to explore my projects and get in touch!🚀
