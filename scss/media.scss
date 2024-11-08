@@ -1,0 +1,294 @@
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    nav {
+        & .sec {
+            padding: 1.5rem 0rem;
+        }
+    }
+
+
+
+    .about {
+        padding: 5rem 5rem;
+        height: auto;
+
+        & img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .education {
+        height: auto;
+        padding: 5rem 5rem;
+    }
+
+    .skills {
+        height: auto;
+
+        & .right img {
+            height: 70%;
+
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 48%;
+    }
+
+    .about {
+        padding: 5rem 5rem;
+        height: auto;
+        flex-direction: column;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+        & .content {
+            width: 100%;
+
+            & p {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    .education {
+        width: 100%;
+        padding: 5rem 5rem;
+        height: auto;
+        flex-direction: column-reverse;
+
+        & .right {
+            width: 100%;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .left {
+            width: 100%;
+
+            & p {
+                font-size: 2.4rem;
+            }
+
+            & li {
+                font-style: italic;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .skills {
+        padding: 5rem 5rem;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        & .left {
+            margin-top: 3rem;
+            width: 100%;
+
+            & img {
+                display: none;
+                width: 60%;
+            }
+
+            & p {
+                font-size: 2.4rem;
+            }
+
+            & .lists li {
+                font-size: 2rem;
+            }
+        }
+
+        & .right {
+            width: 100%;
+            height: auto;
+
+            & img {
+                width: 80%
+            }
+        }
+    }
+
+    .thanks {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 5rem 2rem;
+
+        & .left {
+            width: 100%;
+            height: auto;
+
+
+            & img {
+                width: 30%;
+            }
+
+            & h2 {
+                font-family: "Satisfy", cursive;
+                font-size: 5rem;
+            }
+
+            & p {
+                margin-top: -2rem;
+                font-size: 2rem;
+            }
+
+            & h5 {
+                font-size: 1.8rem;
+            }
+        }
+
+        & .right {
+            // height: 70vh;
+            width: 100%;
+
+            & p {
+                transform: rotate(0deg);
+                padding: 0;
+                font-weight: 700;
+
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 40%;
+    }
+
+    .sec a {
+        font-size: 2rem;
+    }
+
+    .header {
+        & nav {
+            & .sec {
+                padding: .5rem 1rem;
+
+                & a {
+                    font-size: 2.2rem;
+                    text-align: center;
+                }
+            }
+
+
+        }
+    }
+
+    .hero {
+        h1 {
+            font-size: 10rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .about {
+        padding: 5rem 2rem;
+        height: auto;
+        flex-direction: column;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+        & .content {
+            width: 100%;
+
+            & p {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    .education {
+        width: 100%;
+        padding: 5rem 2rem;
+        height: auto;
+        flex-direction: column-reverse;
+
+        & .right {
+            width: 100%;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .left {
+            width: 100%;
+
+            & p {
+                font-size: 2.4rem;
+            }
+
+            & li {
+                font-style: italic;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .skills {
+        padding: 2rem 2rem;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        & .left {
+            width: 100%;
+            // background-color: chocolate;
+
+            & img {
+                display: none;
+                width: 60%;
+            }
+
+            & p {
+                font-size: 2.4rem;
+            }
+
+            & .lists li {
+                font-size: 2rem;
+            }
+        }
+
+        & .right {
+            width: 100%;
+            height: auto;
+
+            & img {
+                width: 80%
+            }
+        }
+    }
+
+
+}

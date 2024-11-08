@@ -1,0 +1,213 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  nav .sec {
+    padding: 1.5rem 0rem;
+  }
+  .about {
+    padding: 5rem 5rem;
+    height: auto;
+  }
+  .about img {
+    width: 50%;
+    height: auto;
+  }
+  .education {
+    height: auto;
+    padding: 5rem 5rem;
+  }
+  .skills {
+    height: auto;
+  }
+  .skills .right img {
+    height: 70%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 48%;
+  }
+  .about {
+    padding: 5rem 5rem;
+    height: auto;
+    flex-direction: column;
+  }
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+  .about .content {
+    width: 100%;
+  }
+  .about .content p {
+    font-size: 2.4rem;
+  }
+  .education {
+    width: 100%;
+    padding: 5rem 5rem;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .education .right {
+    width: 100%;
+  }
+  .education .right img {
+    width: 100%;
+    height: auto;
+  }
+  .education .left {
+    width: 100%;
+  }
+  .education .left p {
+    font-size: 2.4rem;
+  }
+  .education .left li {
+    font-style: italic;
+    font-size: 2rem;
+  }
+  .skills {
+    padding: 5rem 5rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .skills .left {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .skills .left img {
+    display: none;
+    width: 60%;
+  }
+  .skills .left p {
+    font-size: 2.4rem;
+  }
+  .skills .left .lists li {
+    font-size: 2rem;
+  }
+  .skills .right {
+    width: 100%;
+    height: auto;
+  }
+  .skills .right img {
+    width: 80%;
+  }
+  .thanks {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 5rem 2rem;
+  }
+  .thanks .left {
+    width: 100%;
+    height: auto;
+  }
+  .thanks .left img {
+    width: 30%;
+  }
+  .thanks .left h2 {
+    font-family: "Satisfy", cursive;
+    font-size: 5rem;
+  }
+  .thanks .left p {
+    margin-top: -2rem;
+    font-size: 2rem;
+  }
+  .thanks .left h5 {
+    font-size: 1.8rem;
+  }
+  .thanks .right {
+    width: 100%;
+  }
+  .thanks .right p {
+    transform: rotate(0deg);
+    padding: 0;
+    font-weight: 700;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+  .sec a {
+    font-size: 2rem;
+  }
+  .header nav .sec {
+    padding: 0.5rem 1rem;
+  }
+  .header nav .sec a {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 10rem;
+  }
+  .hero p {
+    font-size: 2rem;
+  }
+  .about {
+    padding: 5rem 2rem;
+    height: auto;
+    flex-direction: column;
+  }
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+  .about .content {
+    width: 100%;
+  }
+  .about .content p {
+    font-size: 2.4rem;
+  }
+  .education {
+    width: 100%;
+    padding: 5rem 2rem;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .education .right {
+    width: 100%;
+  }
+  .education .right img {
+    width: 100%;
+    height: auto;
+  }
+  .education .left {
+    width: 100%;
+  }
+  .education .left p {
+    font-size: 2.4rem;
+  }
+  .education .left li {
+    font-style: italic;
+    font-size: 2rem;
+  }
+  .skills {
+    padding: 2rem 2rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .skills .left {
+    width: 100%;
+  }
+  .skills .left img {
+    display: none;
+    width: 60%;
+  }
+  .skills .left p {
+    font-size: 2.4rem;
+  }
+  .skills .left .lists li {
+    font-size: 2rem;
+  }
+  .skills .right {
+    width: 100%;
+    height: auto;
+  }
+  .skills .right img {
+    width: 80%;
+  }
+}/*# sourceMappingURL=media.css.map */
