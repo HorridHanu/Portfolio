@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Satisfy&display=swap");
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  font-family: "Kiwi Maru", serif;
+  transition: all 0.3s;
+}
+
+html {
+  background-color: #f4f0ed;
+  font-size: 62.5%;
+}
+
+::-moz-selection {
+  background-color: #313131;
+  color: #9c9fea;
+}
+
+::selection {
+  background-color: #313131;
+  color: #9c9fea;
+}
+
+.header {
+  height: 30vh;
+  width: 100%;
+  background-color: #313131;
+}
+.header .nav1 .sec a {
+  scale: 0;
+}
+.header nav {
+  display: flex;
+  gap: 2rem;
+  border-top: 0.15rem solid #f7f2ee;
+  justify-content: space-evenly;
+}
+.header nav .sec {
+  width: 33%;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+.header nav .sec a {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: #f7f2ee;
+  position: relative;
+}
+.header nav .sec a::after {
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #9c9fea;
+}
+.header nav .sec a:hover::after {
+  width: 100%;
+}
+.header nav .sec2 {
+  border-right: 0.15rem solid #f7f2ee;
+  border-left: 0.15rem solid #f7f2ee;
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-top: -1px;
+  background-color: #313131;
+}
+.hero h1 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 15rem;
+  color: #f7f2ee;
+  font-family: "Satisfy", cursive;
+}
+.hero p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f7f2ee;
+  margin-top: 2rem;
+}
+.hero p span {
+  color: #9c9fea;
+  cursor: pointer;
+}
+.hero p span:hover {
+  color: #f7f2ee;
+}
+
+#menu-btn {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem 1rem;
+  background-color: #eee;
+  font-size: 2.2rem;
+  color: var(--secondary-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.about {
+  padding: 2rem 6rem;
+  width: 100%;
+  height: 100vh;
+  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+  background: #f4f0ed;
+  border-bottom: 1px solid #313131;
+}
+.about img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 50%;
+  height: auto;
+}
+.about .content {
+  width: 40%;
+}
+.about .content h2 {
+  text-align: end;
+  font-size: 5rem;
+}
+.about .content p {
+  text-align: justify;
+  font-size: 2rem;
+}
+.about .content p span {
+  text-decoration: underline;
+}
+
+.education {
+  padding: 0rem 6rem;
+  width: 100%;
+  height: 100vh;
+  gap: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f0ed;
+  border-bottom: 1px solid #313131;
+}
+.education .left {
+  width: 50%;
+}
+.education .left h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.education .left p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.education .left li {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+.education .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.education .right img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 70%;
+  height: auto;
+}
+
+.skills {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 2rem 6rem;
+  justify-content: space-between;
+  background: #f4f0ed;
+}
+.skills h2 {
+  font-size: 5rem;
+}
+.skills .left {
+  width: 50%;
+}
+.skills .left img {
+  width: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.skills .left p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: justify;
+}
+.skills .left .lists {
+  margin-top: 4rem;
+  gap: 4rem;
+  display: flex;
+}
+.skills .left .lists li {
+  font-size: 1.8rem;
+}
+.skills .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.skills .right img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 60%;
+  height: auto;
+}
+
+/* case studies section start  */
+.case-studies {
+  padding: 0rem 8%;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #313131;
+  color: #f7f2ee;
+}
+
+.case-studies h2 {
+  font-family: "Pirata One", system-ui;
+  font-size: 5rem;
+}
+
+.case-studies p {
+  width: 100%;
+  font-size: 2.2rem;
+}
+
+.case-studies .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  padding: 1rem 0rem;
+}
+
+.case-studies .box-container .box {
+  cursor: pointer;
+  width: 23%;
+  overflow: hidden;
+  background-color: #9c9fea;
+  padding: 1.5rem 2.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.case-studies .box-container .box:hover {
+  box-shadow: rgba(252, 252, 252, 0.779) 0px 10px 15px -3px, rgba(252, 252, 252, 0.792) 0px 4px 6px -2px;
+}
+
+.case-studies .box-container .box h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.case-studies .box-container .box p {
+  font-size: 1.2rem;
+}
+
+.case-studies .box-container .box img {
+  padding: 2rem 0rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 20rem;
+  height: 20rem;
+}
+
+.case-studies .box-container .box hr {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  height: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thanks {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  border-top: 1px solid #070604;
+  display: flex;
+  padding: 2rem 6rem;
+  justify-content: space-between;
+}
+.thanks .left {
+  width: 50%;
+  height: 70%;
+}
+.thanks .left img {
+  width: 30%;
+}
+.thanks .left h2 {
+  font-size: 5rem;
+}
+.thanks .left p {
+  font-size: 2rem;
+  z-index: 2000;
+  margin-top: -5rem;
+}
+.thanks .left h5 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  z-index: 20000;
+}
+.thanks .left .email {
+  opacity: 0.2;
+  width: 15%;
+  height: auto;
+  z-index: 2;
+  margin-top: 2rem;
+}
+.thanks .right {
+  width: 50%;
+  height: 90%;
+}
+.thanks .right p {
+  padding: 2rem;
+  font-size: 2rem;
+  color: #9c9fea;
+  margin-top: 5rem;
+  font-weight: 600;
+  text-align: justify;
+  transform: rotate(-4deg);
+}
+.thanks .right h3 {
+  font-size: 2rem;
+  text-align: end;
+  color: #070604;
+  margin-top: 5rem;
+}/*# sourceMappingURL=main.css.map */
